@@ -13,7 +13,7 @@ function App() {
   const [successLanding, setSuccessLanding] = useState();
   const [launches, setLaunches] = useState([]);
   const [url, setUrl] = useState(
-    `https://api.spacexdata.com/v3/launches?limit=20`
+    `https://api.spacexdata.com/v3/launches?limit=100`
   )
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     setUrl(
-      `https://api.spacexdata.com/v3/launches?limit=20&amp;launch_success=${successLaunch}&amp;land_success=${successLanding}&amp;launch_year=${year}`
+      `https://api.spacexdata.com/v3/launches?limit=100&amp;launch_success=${successLaunch}&amp;land_success=${successLanding}&amp;launch_year=${year}`
     )
   }, [year, successLaunch, successLanding]);
 
