@@ -3,12 +3,24 @@
   background-color: #fff;
   margin: 20px 0;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .img-container {
-  background-color: #eee;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .img-container img {
   width: 100%;
+}
+
+.LaunchDetailCard span {
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.LaunchDetailCard .launch-title {
+  color: navy;
 }

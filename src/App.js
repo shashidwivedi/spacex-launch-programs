@@ -13,7 +13,7 @@ function App() {
   const [successLanding, setSuccessLanding] = useState();
   const [launches, setLaunches] = useState([]);
   const [url, setUrl] = useState(
-    `https://api.spacexdata.com/v3/launches?limit=10`
+    `https://api.spacexdata.com/v3/launches?limit=20`
   )
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     setUrl(
-      `https://api.spacexdata.com/v3/launches?limit=10&amp;launch_success=${successLaunch}&amp;land_success=${successLanding}&amp;launch_year=${year}`
+      `https://api.spacexdata.com/v3/launches?limit=20&amp;launch_success=${successLaunch}&amp;land_success=${successLanding}&amp;launch_year=${year}`
     )
   }, [year, successLaunch, successLanding]);
 
@@ -38,15 +38,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>SpaceX Launch Programs</h1>
-        <Filters yearslist={YEARSLIST} 
-          year={year} 
-          setYear={setYear} 
-          setSuccessLaunch={setSuccessLaunch} 
-          setSuccessLanding={setSuccessLanding} 
-          successLaunch={successLaunch} 
-          successLanding={successLanding} 
-        />
-        <LaunchPrograms launches={launches} />
+        <div className="row-md">
+          <Filters yearslist={YEARSLIST} 
+            year={year} 
+            setYear={setYear} 
+            setSuccessLaunch={setSuccessLaunch} 
+            setSuccessLanding={setSuccessLanding} 
+            successLaunch={successLaunch} 
+            successLanding={successLanding} 
+          />
+          <LaunchPrograms launches={launches} />
+        </div>
         <p className="footnote"><b>Developed By:</b> Shashi</p>
       </header>
     </div>

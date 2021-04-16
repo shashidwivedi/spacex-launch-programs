@@ -4,3 +4,43 @@
   padding: 20px;
   text-align: center;
 }
+
+@media (min-width:700px) and (max-width: 1024px) {
+  .row-md {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .Filters {
+    position: sticky;
+    top: 80px;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .row-md {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .Filters {
+    position: sticky;
+    top: 80px;
+  }
+
+  .row-lg {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .App {
+    max-width: 1440px;
+  }
+}

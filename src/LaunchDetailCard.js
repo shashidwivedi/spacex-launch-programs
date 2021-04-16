@@ -6,7 +6,7 @@ const LaunchDetailCard = ({flight_number, mission_name, mission_id, links, launc
       <div className="img-container">
         <img src={links.mission_patch_small} alt={`flight ${flight_number}`} />
       </div>
-      <span>{`${mission_name} #${flight_number}`}</span><br />
+      <span className="launch-title">{`${mission_name} #${flight_number}`}</span><br />
       <span>Mission Ids:</span>
       <ul>
         {mission_id.map((m_id) => (<li key={m_id}>{m_id}</li>))}

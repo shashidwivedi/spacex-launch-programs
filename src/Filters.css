@@ -1,6 +1,7 @@
 .Filters {
   padding: 20px;
   background-color: #fff;
+  max-width: 280px;
 }
 
 .filter-name {
