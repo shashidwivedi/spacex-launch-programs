@@ -38,7 +38,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>SpaceX Launch Programs</h1>
-        <Filters yearslist={YEARSLIST} year={year} setYear={setYear} setSuccessLaunch={setSuccessLaunch} setSuccessLanding={setSuccessLanding} successLaunch={successLaunch} successLanding={successLanding} />
+        <Filters yearslist={YEARSLIST} 
+          year={year} 
+          setYear={setYear} 
+          setSuccessLaunch={setSuccessLaunch} 
+          setSuccessLanding={setSuccessLanding} 
+          successLaunch={successLaunch} 
+          successLanding={successLanding} 
+        />
         <LaunchPrograms launches={launches} />
         <p className="footnote"><b>Developed By:</b> Shashi</p>
       </header>
