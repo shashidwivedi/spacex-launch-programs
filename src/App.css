@@ -33,6 +33,7 @@
 
   .row-lg {
     display: flex;
+    width: 70%;
     justify-content: space-around;
     flex-wrap: wrap;
   }
