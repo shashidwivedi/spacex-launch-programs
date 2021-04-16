@@ -1,0 +1,43 @@
+.Filters {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.filter-name {
+  width: 135px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 2px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex: 35%;
+}
+
+.col:nth-child(2n) {
+  text-align: right;
+}
+
+.filter-btn {
+  background-color: rgb(187, 235, 147);
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 5px 20px;
+  border: none;
+}
+
+.filter-btn:hover {
+  background-color: greenyellow;
+}
+
+.filter-active {
+  background-color: greenyellow;
+}
