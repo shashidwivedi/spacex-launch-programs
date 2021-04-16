@@ -1,7 +1,7 @@
-const LaunchDetailCard = (props) => {
+const LaunchDetailCard = ({flight_number, mission_name}) => {
   return (
     <div className="LaunchDetailCard">
-      hello
+      {`${mission_name} #${flight_number}`}
     </div>
   );
 }
