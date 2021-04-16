@@ -1,0 +1,14 @@
+.LaunchDetailCard {
+  max-width: 280px;
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.img-container {
+  background-color: #eee;
+}
+
+.img-container img {
+  width: 100%;
+}
